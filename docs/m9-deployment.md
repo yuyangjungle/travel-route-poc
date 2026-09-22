@@ -24,6 +24,8 @@ py -3.12 -m unittest discover -s tests -v
 py -3.12 -m benchmark_tools.run_m2
 py -3.12 -m data.m5.generate --check
 node --check web/assets/app.js
+# 服务启动后，已安装 agent-browser 时可运行浏览器状态回归（不调用模型）
+py -3.12 scripts/verify_m9_browser.py --url http://127.0.0.1:8000
 ```
 
 干净环境验证器在临时虚拟环境内安装并运行全部测试。`.gitattributes` 禁止换行转换，保持冻结语料、核心代码和数据的字节哈希。

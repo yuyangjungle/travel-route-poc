@@ -2,7 +2,7 @@
 
 日期：2026-09-22。产品定位：**AI-assisted multi-objective travel decision prototype**。
 
-公开演示：[https://travel-route-poc.vercel.app](https://travel-route-poc.vercel.app)。GitHub 发布与 CI 状态在最终交付时核验。
+公开演示：[随心航线](https://travel-route-poc.vercel.app) · [GitHub公开仓库](https://github.com/yuyangjungle/travel-route-poc)。两处均已发布并核验访问。Vercel通过CLI发布，GitHub保存完整实现和历史验证材料。
 
 ## 已实现
 
@@ -28,6 +28,7 @@
 | Streamlit真实浏览器 | 相同16/8/5；预算1元无解，旧卡片清除；无页面异常 |
 | 线上自然语言完整旅程 | 模糊输入→缺失项确认→用户补充机场/日期/天数/预算/地点→11可行、6 Pareto、5代表方案 |
 | 修改条件与无解 | 修改预算清除确认和旧结果；1元预算显示无解，不自动放宽 |
+| 浏览器状态回归 | 3/3通过：加载期间操作安全、请求期间撤回同意拒收旧结果、撤回同意清除已显示与可下载结果；无模型调用 |
 | 移动端 | 390px视口，文档宽390px；比较表在容器内横向滚动 |
 | 前端与仓库凭据检查 | 前端只访问同源API；待发布文件扫描无真实key格式匹配，Secret文件被忽略 |
 
