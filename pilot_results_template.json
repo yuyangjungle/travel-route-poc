@@ -1,0 +1,37 @@
+{
+  "schema_version": "m4-pilot-result-v1",
+  "participant_id": "PXX",
+  "task_id": "T1",
+  "prototype_session_id": null,
+  "completion_status": "completed_independently",
+  "task_completion_seconds": null,
+  "selected_itinerary_id": null,
+  "preferred_alternative_id": null,
+  "confidence_rating_1_to_5": null,
+  "trust_rating_1_to_5": null,
+  "usefulness_rating_1_to_5": null,
+  "discovered_non_obvious_route": "unsure",
+  "would_consider_selected_route": "unsure",
+  "participant_feedback": {
+    "decision_reason": "",
+    "confusing_parts": [],
+    "missing_information": [],
+    "comments": []
+  },
+  "observer_record": {
+    "hesitations": [],
+    "misunderstandings": [],
+    "unexpected_behaviors": [],
+    "compared_alternatives": null,
+    "questioned_scores": null,
+    "opened_details": null,
+    "assistance_count": 0,
+    "assistance_notes": [],
+    "observed_issues": []
+  },
+  "data_quality": {
+    "prototype_record_received": false,
+    "technical_failure": false,
+    "missing_fields": []
+  }
+}

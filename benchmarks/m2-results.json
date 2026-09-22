@@ -1,0 +1,616 @@
+{
+  "benchmark_version": "m2-v1",
+  "dataset_version": "1.0.0",
+  "fixture_digest": "6a448a88c843c46ac2cb1b1881897c261bf2c4eb9f7f26913fc648573cbede0a",
+  "optimizer_executed": true,
+  "oracle": "destination-permutations-and-quote-products-v1",
+  "scenarios": [
+    {
+      "complete_set_match": true,
+      "expanded_states": 2,
+      "feasible_count": 2,
+      "id": "B01",
+      "oracle_feasible_count": 2,
+      "pareto_count": 2,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "24.000000",
+          "destinations": [
+            "SEMPORNA",
+            "KL"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 280000,
+          "labels": [
+            "cheapest",
+            "strongest_preference_match",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "twu_kul",
+            "kul_hgh"
+          ],
+          "recommendation_score": "50.603448",
+          "transit_minutes": 1080
+        },
+        {
+          "burden_points": "18.000000",
+          "destinations": [
+            "SEMPORNA"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 360000,
+          "labels": [
+            "least_exhausting"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "twu_pvg"
+          ],
+          "recommendation_score": "50.551948",
+          "transit_minutes": 840
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 0,
+      "feasible_count": 0,
+      "id": "B02",
+      "oracle_feasible_count": 0,
+      "pareto_count": 0,
+      "passed": true,
+      "recommendations": [],
+      "status": "no_feasible_in_dataset"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 1,
+      "feasible_count": 2,
+      "id": "B03",
+      "oracle_feasible_count": 2,
+      "pareto_count": 2,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "18.000000",
+          "destinations": [
+            "SEMPORNA"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 360000,
+          "labels": [
+            "least_exhausting",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "twu_pvg"
+          ],
+          "recommendation_score": "50.551948",
+          "transit_minutes": 840
+        },
+        {
+          "burden_points": "52.500000",
+          "destinations": [
+            "SEMPORNA"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 280000,
+          "labels": [
+            "cheapest",
+            "strongest_preference_match"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "long_return"
+          ],
+          "recommendation_score": "45.015213",
+          "transit_minutes": 2250
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 2,
+      "feasible_count": 1,
+      "id": "B04",
+      "oracle_feasible_count": 1,
+      "pareto_count": 1,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "18.000000",
+          "destinations": [
+            "SEMPORNA"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 360000,
+          "labels": [
+            "cheapest",
+            "least_exhausting",
+            "strongest_preference_match",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "twu_pvg"
+          ],
+          "recommendation_score": "50.551948",
+          "transit_minutes": 840
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 2,
+      "feasible_count": 1,
+      "id": "B05",
+      "oracle_feasible_count": 1,
+      "pareto_count": 1,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "24.000000",
+          "destinations": [
+            "SEMPORNA",
+            "KL"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 280000,
+          "labels": [
+            "cheapest",
+            "least_exhausting",
+            "strongest_preference_match",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "twu_kul",
+            "kul_hgh"
+          ],
+          "recommendation_score": "50.603448",
+          "transit_minutes": 1080
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 2,
+      "feasible_count": 2,
+      "id": "B06",
+      "oracle_feasible_count": 2,
+      "pareto_count": 2,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "24.000000",
+          "destinations": [
+            "SEMPORNA",
+            "KL"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 280000,
+          "labels": [
+            "cheapest",
+            "strongest_preference_match",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "twu_kul",
+            "kul_hgh"
+          ],
+          "recommendation_score": "50.603448",
+          "transit_minutes": 1080
+        },
+        {
+          "burden_points": "18.000000",
+          "destinations": [
+            "SEMPORNA"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 360000,
+          "labels": [
+            "least_exhausting"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "twu_pvg"
+          ],
+          "recommendation_score": "50.551948",
+          "transit_minutes": 840
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 2,
+      "feasible_count": 1,
+      "id": "B07",
+      "oracle_feasible_count": 1,
+      "pareto_count": 1,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "18.000000",
+          "destinations": [
+            "SEMPORNA"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 360000,
+          "labels": [
+            "cheapest",
+            "least_exhausting",
+            "strongest_preference_match",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "twu_pvg"
+          ],
+          "recommendation_score": "50.551948",
+          "transit_minutes": 840
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 1,
+      "feasible_count": 1,
+      "id": "B08",
+      "oracle_feasible_count": 1,
+      "pareto_count": 1,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "18.000000",
+          "destinations": [
+            "SEMPORNA"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 360000,
+          "labels": [
+            "cheapest",
+            "least_exhausting",
+            "strongest_preference_match",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "twu_pvg"
+          ],
+          "recommendation_score": "50.551948",
+          "transit_minutes": 840
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 1,
+      "feasible_count": 1,
+      "id": "B09",
+      "oracle_feasible_count": 1,
+      "pareto_count": 1,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "18.000000",
+          "destinations": [
+            "SEMPORNA"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 360000,
+          "labels": [
+            "cheapest",
+            "least_exhausting",
+            "strongest_preference_match",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "twu_pvg"
+          ],
+          "recommendation_score": "50.551948",
+          "transit_minutes": 840
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 1,
+      "feasible_count": 1,
+      "id": "B10",
+      "oracle_feasible_count": 1,
+      "pareto_count": 1,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "16.000000",
+          "destinations": [
+            "SEMPORNA"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 360000,
+          "labels": [
+            "cheapest",
+            "least_exhausting",
+            "strongest_preference_match",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "midnight_return"
+          ],
+          "recommendation_score": "51.409091",
+          "transit_minutes": 720
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 1,
+      "feasible_count": 1,
+      "id": "B11",
+      "oracle_feasible_count": 1,
+      "pareto_count": 1,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "23.000000",
+          "destinations": [
+            "SEMPORNA"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 360000,
+          "labels": [
+            "cheapest",
+            "least_exhausting",
+            "strongest_preference_match",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "early_return"
+          ],
+          "recommendation_score": "48.728240",
+          "transit_minutes": 840
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 1,
+      "feasible_count": 1,
+      "id": "B12",
+      "oracle_feasible_count": 1,
+      "pareto_count": 1,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "18.000000",
+          "destinations": [
+            "SAIGON"
+          ],
+          "experience_points": "0.000000",
+          "flight_total_minor": 200000,
+          "labels": [
+            "cheapest",
+            "least_exhausting",
+            "strongest_preference_match",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_sgn",
+            "sgn_pvg"
+          ],
+          "recommendation_score": "38.142857",
+          "transit_minutes": 600
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 0,
+      "feasible_count": 0,
+      "id": "B13",
+      "oracle_feasible_count": 0,
+      "pareto_count": 0,
+      "passed": true,
+      "recommendations": [],
+      "status": "insufficient_coverage"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 2,
+      "feasible_count": 0,
+      "id": "B14",
+      "oracle_feasible_count": 0,
+      "pareto_count": 0,
+      "passed": true,
+      "recommendations": [],
+      "status": "no_feasible_in_dataset"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 2,
+      "feasible_count": 2,
+      "id": "B15",
+      "oracle_feasible_count": 2,
+      "pareto_count": 1,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "18.000000",
+          "destinations": [
+            "SEMPORNA"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 340000,
+          "labels": [
+            "cheapest",
+            "least_exhausting",
+            "strongest_preference_match",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "hgh_twu",
+            "twu_pvg"
+          ],
+          "recommendation_score": "51.049107",
+          "transit_minutes": 840
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 1,
+      "feasible_count": 1,
+      "id": "B16",
+      "oracle_feasible_count": 1,
+      "pareto_count": 1,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "18.000000",
+          "destinations": [
+            "SEMPORNA"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 360000,
+          "labels": [
+            "cheapest",
+            "least_exhausting",
+            "strongest_preference_match",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "twu_pvg"
+          ],
+          "recommendation_score": "50.551948",
+          "transit_minutes": 840
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 0,
+      "feasible_count": 0,
+      "id": "B17",
+      "oracle_feasible_count": 0,
+      "pareto_count": 0,
+      "passed": true,
+      "recommendations": [],
+      "status": "unsupported_request"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 0,
+      "feasible_count": 0,
+      "id": "B18",
+      "oracle_feasible_count": 0,
+      "pareto_count": 0,
+      "passed": true,
+      "recommendations": [],
+      "status": "invalid_request"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 2,
+      "feasible_count": 2,
+      "id": "B19",
+      "oracle_feasible_count": 2,
+      "pareto_count": 2,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "16.000000",
+          "destinations": [
+            "PHUKET"
+          ],
+          "experience_points": "80.000000",
+          "flight_total_minor": 300000,
+          "labels": [
+            "cheapest",
+            "least_exhausting",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_hkt",
+            "hkt_pvg"
+          ],
+          "recommendation_score": "51.055556",
+          "transit_minutes": 720
+        },
+        {
+          "burden_points": "18.000000",
+          "destinations": [
+            "SEMPORNA"
+          ],
+          "experience_points": "100.000000",
+          "flight_total_minor": 360000,
+          "labels": [
+            "strongest_preference_match"
+          ],
+          "offer_ids": [
+            "pvg_twu",
+            "twu_pvg"
+          ],
+          "recommendation_score": "50.551948",
+          "transit_minutes": 840
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "complete_set_match": true,
+      "expanded_states": 2,
+      "feasible_count": 2,
+      "id": "B20",
+      "oracle_feasible_count": 2,
+      "pareto_count": 1,
+      "passed": true,
+      "recommendations": [
+        {
+          "burden_points": "16.000000",
+          "destinations": [
+            "PHUKET"
+          ],
+          "experience_points": "80.000000",
+          "flight_total_minor": 300000,
+          "labels": [
+            "cheapest",
+            "least_exhausting",
+            "strongest_preference_match",
+            "best_overall"
+          ],
+          "offer_ids": [
+            "pvg_hkt",
+            "hkt_pvg"
+          ],
+          "recommendation_score": "51.055556",
+          "transit_minutes": 720
+        }
+      ],
+      "status": "ok"
+    }
+  ],
+  "scoring_version": "score-v1",
+  "search_version": "exact-dfs-v1"
+}

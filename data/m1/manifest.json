@@ -1,0 +1,41 @@
+{
+  "dataset_id": "asia-m1-synthetic",
+  "dataset_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "created_at": "2026-09-15T12:00:00+08:00",
+  "currency": "CNY",
+  "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+  "fare_profile_description": "One adult; taxes included; one cabin bag up to 7kg and 55x40x20cm; no checked bag. Synthetic common profile, not an airline policy.",
+  "preference_tag_ids": [
+    "island",
+    "diving",
+    "food"
+  ],
+  "covered_airport_ids": [
+    "PVG",
+    "HGH",
+    "TWU",
+    "BKI",
+    "KUL",
+    "SGN",
+    "DPS",
+    "SIN",
+    "HKT"
+  ],
+  "covered_destination_ids": [
+    "SEMPORNA",
+    "KOTA",
+    "KL",
+    "SAIGON",
+    "BALI",
+    "PHUKET"
+  ],
+  "coverage_start_date": "2026-10-01",
+  "coverage_end_date": "2026-10-31",
+  "coverage_kind": "synthetic",
+  "coverage_notes": [
+    "Only listed offers exist in this fixture; no inference about real-world availability.",
+    "Each scenario selects an explicit subset of offers; airport and destination catalogs remain shared.",
+    "All prices, timetables, scores, seasonality and ground access assumptions are invented for benchmark validation."
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "PVG",
+    "name": "Shanghai Pudong",
+    "timezone": "Asia/Shanghai"
+  },
+  {
+    "id": "HGH",
+    "name": "Hangzhou",
+    "timezone": "Asia/Shanghai"
+  },
+  {
+    "id": "TWU",
+    "name": "Tawau",
+    "timezone": "Asia/Kuching"
+  },
+  {
+    "id": "BKI",
+    "name": "Kota Kinabalu",
+    "timezone": "Asia/Kuching"
+  },
+  {
+    "id": "KUL",
+    "name": "Kuala Lumpur",
+    "timezone": "Asia/Kuala_Lumpur"
+  },
+  {
+    "id": "SGN",
+    "name": "Ho Chi Minh City",
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+  {
+    "id": "DPS",
+    "name": "Denpasar",
+    "timezone": "Asia/Makassar"
+  },
+  {
+    "id": "SIN",
+    "name": "Singapore",
+    "timezone": "Asia/Singapore"
+  },
+  {
+    "id": "HKT",
+    "name": "Phuket",
+    "timezone": "Asia/Bangkok"
+  }
+]

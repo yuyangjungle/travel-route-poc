@@ -1,0 +1,25 @@
+{
+  "schema_version": "m6-destination-description-v1",
+  "data_status": "simulated_descriptive_metadata",
+  "separation_note": "These display-only descriptions never enter feasibility, scoring or route search.",
+  "destinations": [
+    {"id": "SEMPORNA", "display_name_zh": "仙本那", "destination_type": "潜水海岛门户", "suitable_activities": ["潜水", "浮潜", "海岛放松"], "seasonal_note": "模拟提示：10 月适合用于海岛方案比较；实际海况需另行核对。", "transport_difficulty": "较高", "transport_note": "通常需要联程与较长地面接驳；当前时刻均为模拟。"},
+    {"id": "KL", "display_name_zh": "吉隆坡", "destination_type": "区域枢纽城市", "suitable_activities": ["美食", "城市漫游", "中转停留"], "seasonal_note": "模拟提示：全年均可作为城市组合节点。", "transport_difficulty": "较低", "transport_note": "枢纽属性较强，适合观察增加一站是否改善票价。"},
+    {"id": "SAIGON", "display_name_zh": "胡志明市", "destination_type": "美食城市", "suitable_activities": ["街头美食", "城市文化", "咖啡"], "seasonal_note": "模拟提示：10 月季节分较高，不代表真实天气预报。", "transport_difficulty": "较低", "transport_note": "城市机场接入相对直接。"},
+    {"id": "BALI", "display_name_zh": "巴厘岛", "destination_type": "综合海岛", "suitable_activities": ["海滩", "自然", "放松", "潜水"], "seasonal_note": "模拟提示：10 月海岛体验分较高；真实雨季与海况需核对。", "transport_difficulty": "中等", "transport_note": "岛内接驳被简化为固定时间。"},
+    {"id": "PHUKET", "display_name_zh": "普吉岛", "destination_type": "度假海岛", "suitable_activities": ["海滩", "美食", "放松"], "seasonal_note": "模拟提示：10 月作为肩季方案比较。", "transport_difficulty": "中等", "transport_note": "机场接入方便度为模拟等级。"},
+    {"id": "SINGAPORE", "display_name_zh": "新加坡", "destination_type": "区域枢纽城市", "suitable_activities": ["美食", "城市体验", "亲子"], "seasonal_note": "模拟提示：季节变化较小。", "transport_difficulty": "较低", "transport_note": "适合充当多目的地组合中的低难度城市节点。"},
+    {"id": "BANGKOK", "display_name_zh": "曼谷", "destination_type": "美食文化城市", "suitable_activities": ["美食", "文化", "购物"], "seasonal_note": "模拟提示：10 月体验分较高。", "transport_difficulty": "较低", "transport_note": "枢纽航线多的概念由模拟报价表达。"},
+    {"id": "CEBU", "display_name_zh": "宿务", "destination_type": "潜水海岛城市", "suitable_activities": ["潜水", "跳岛", "海滩"], "seasonal_note": "模拟提示：10 月用于潜水偏好比较；不提供水下活动安全判断。", "transport_difficulty": "中等", "transport_note": "可能涉及岛间转移，但本原型只展示固定机场接驳。"},
+    {"id": "TOKYO", "display_name_zh": "东京", "destination_type": "大型城市", "suitable_activities": ["美食", "城市文化", "购物"], "seasonal_note": "模拟提示：10 月城市体验分较高。", "transport_difficulty": "较低", "transport_note": "机场到市区时间使用固定模拟值。"},
+    {"id": "SEOUL", "display_name_zh": "首尔", "destination_type": "大型城市", "suitable_activities": ["美食", "城市文化", "购物"], "seasonal_note": "模拟提示：秋季用于城市方案比较。", "transport_difficulty": "较低", "transport_note": "不区分真实机场快线或地面交通。"},
+    {"id": "TAIPEI", "display_name_zh": "台北", "destination_type": "美食城市", "suitable_activities": ["夜市美食", "城市文化", "近郊自然"], "seasonal_note": "模拟提示：10 月体验分较高。", "transport_difficulty": "较低", "transport_note": "接驳难度为展示标签。"},
+    {"id": "MANILA", "display_name_zh": "马尼拉", "destination_type": "区域枢纽城市", "suitable_activities": ["城市停留", "美食", "海岛中转"], "seasonal_note": "模拟提示：用于观察枢纽组合。", "transport_difficulty": "中等", "transport_note": "现实拥堵和换航站楼未建模。"},
+    {"id": "HANOI", "display_name_zh": "河内", "destination_type": "文化美食城市", "suitable_activities": ["历史文化", "美食", "城市漫游"], "seasonal_note": "模拟提示：10 月文化体验分较高。", "transport_difficulty": "较低", "transport_note": "机场接驳使用固定模拟值。"},
+    {"id": "DANANG", "display_name_zh": "岘港", "destination_type": "海滨城市", "suitable_activities": ["海滩", "美食", "周边文化"], "seasonal_note": "模拟提示：季节信息只参与概念展示，真实降雨需核对。", "transport_difficulty": "较低", "transport_note": "城市与海滩间交通未细分。"},
+    {"id": "KOTA", "display_name_zh": "亚庇", "destination_type": "自然海岛门户", "suitable_activities": ["海岛", "自然", "美食"], "seasonal_note": "模拟提示：10 月用于自然偏好比较。", "transport_difficulty": "中等", "transport_note": "离岛交通不在航线优化范围。"},
+    {"id": "PALAWAN", "display_name_zh": "巴拉望", "destination_type": "自然海岛", "suitable_activities": ["跳岛", "自然", "浮潜", "放松"], "seasonal_note": "模拟提示：10 月只作方案比较，真实海况需核对。", "transport_difficulty": "较高", "transport_note": "本地转移被简化，现实决策需要额外核查。"},
+    {"id": "OSAKA", "display_name_zh": "大阪", "destination_type": "美食城市", "suitable_activities": ["美食", "城市文化", "周边探索"], "seasonal_note": "模拟提示：秋季城市体验分较高。", "transport_difficulty": "较低", "transport_note": "机场接驳使用固定模拟值。"},
+    {"id": "HONG_KONG", "display_name_zh": "香港", "destination_type": "区域枢纽城市", "suitable_activities": ["美食", "城市漫游", "短途停留"], "seasonal_note": "模拟提示：10 月体验分较高。", "transport_difficulty": "较低", "transport_note": "适合作为开放口组合中的城市节点。"}
+  ]
+}

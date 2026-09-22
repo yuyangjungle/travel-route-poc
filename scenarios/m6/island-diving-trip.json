@@ -1,0 +1,44 @@
+{
+  "schema_version": "m6-scenario-v1",
+  "id": "m6-island-diving-trip",
+  "title": "海岛潜水｜仙本那必去",
+  "traveler_profile": "把潜水放在首位、但仍希望控制机票和转场的旅客",
+  "expected_user_intent": "确保到访仙本那，同时发现增加巴厘岛、城市枢纽或其他海岛后的费用与负担变化。",
+  "decision_priority": "潜水匹配优先，价格和转场复杂度用于排除不值得的组合。",
+  "must_have_constraints": [
+    "仙本那必须到访",
+    "从上海出发",
+    "12–18 天",
+    "单人模拟机票预算不超过 9,000 元"
+  ],
+  "dataset_path": "data/m5",
+  "offer_set_path": "scenarios/m6/offer_sets/m5-medium-v1.json",
+  "request": {
+    "request_id": "m6-island-diving-trip",
+    "origin_airport_ids": ["PVG"],
+    "return_airport_ids": ["PVG", "HGH", "NKG"],
+    "window_start_date": "2027-10-01",
+    "window_end_date": "2027-10-22",
+    "reference_timezone": "Asia/Shanghai",
+    "min_trip_days": 12,
+    "max_trip_days": 18,
+    "flight_budget_minor": 900000,
+    "currency": "CNY",
+    "passenger_count": 1,
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "required_destination_ids": ["SEMPORNA"],
+    "preferred_destination_ids": ["BALI", "CEBU"],
+    "preference_weights": {
+      "island": 95,
+      "diving": 100,
+      "food": 45,
+      "culture": 10,
+      "nature": 75,
+      "city": 5,
+      "relaxation": 60
+    },
+    "max_optional_destinations": 3,
+    "max_connections_per_offer": 1,
+    "allow_self_transfer": false
+  }
+}

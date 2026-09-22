@@ -1,0 +1,94 @@
+{
+  "id": "B02",
+  "title": "Budget is infeasible",
+  "hypothesis": "A hard budget must not be silently relaxed.",
+  "requirement_ids": [
+    "FR-03",
+    "FR-04"
+  ],
+  "assumption_ids": [
+    "A-01",
+    "A-07"
+  ],
+  "offer_ids": [
+    "pvg_twu",
+    "twu_pvg",
+    "twu_kul",
+    "kul_hgh"
+  ],
+  "request": {
+    "request_id": "B02",
+    "origin_airport_ids": [
+      "PVG"
+    ],
+    "return_airport_ids": [
+      "PVG",
+      "HGH"
+    ],
+    "window_start_date": "2026-10-01",
+    "window_end_date": "2026-10-31",
+    "reference_timezone": "Asia/Shanghai",
+    "min_trip_days": 12,
+    "max_trip_days": 18,
+    "flight_budget_minor": 100000,
+    "currency": "CNY",
+    "passenger_count": 1,
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "required_destination_ids": [
+      "SEMPORNA"
+    ],
+    "preferred_destination_ids": [],
+    "preference_weights": {
+      "island": 100,
+      "diving": 0,
+      "food": 0
+    },
+    "max_optional_destinations": 4,
+    "max_connections_per_offer": 2,
+    "allow_self_transfer": false
+  },
+  "expected_request_status": "ok",
+  "witnesses": [
+    {
+      "id": "baseline",
+      "offer_ids": [
+        "pvg_twu",
+        "twu_pvg"
+      ],
+      "access_ids": [
+        "SEMPORNA_TWU"
+      ],
+      "expected": {
+        "valid": false,
+        "errors": [
+          "flight_budget"
+        ]
+      }
+    },
+    {
+      "id": "extra",
+      "offer_ids": [
+        "pvg_twu",
+        "twu_kul",
+        "kul_hgh"
+      ],
+      "access_ids": [
+        "SEMPORNA_TWU",
+        "KL_KUL"
+      ],
+      "expected": {
+        "valid": false,
+        "errors": [
+          "flight_budget"
+        ]
+      }
+    }
+  ],
+  "comparisons": [],
+  "expected_search_status": "no_feasible_in_dataset",
+  "infeasibility_certificate": {
+    "type": "outbound_price_floor",
+    "minimum_outbound_minor": 180000,
+    "explanation": "Every allowed departure offer costs at least 180000 minor units, above the total 100000 budget."
+  }
+}

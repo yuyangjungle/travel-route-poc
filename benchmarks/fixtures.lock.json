@@ -1,0 +1,32 @@
+{
+  "lock_version": 1,
+  "algorithm": "sha256-canonical-json",
+  "files": {
+    "data/m1/accesses.json": "61960d2eb19edbf80dba340ef97e2b28d7ab22403c396e593a7730edc2980664",
+    "data/m1/airports.json": "ee4fa286007d91a4c8c7113033285035618bd899ab9ab6db38da85efc3b24a7f",
+    "data/m1/destinations.json": "bc4df83ad1140c4b4381c3e0447191a8bec9338606fb1943fd3c5c192da69c28",
+    "data/m1/manifest.json": "590e00c45ff82b6648c25e3e00272e290bca8c1e2400c6c5f5b544e07890d0b3",
+    "data/m1/offers.json": "354a89556ad2fec981794e01130d11e11a1d0f2029bfb5c9f0034f96e7fa3323",
+    "data/m1/scoring.json": "f2b8f4fa39f582367b87913d7bf40e4e06918e14f9ac09ac49b80a951cf1c6e0",
+    "benchmarks/scenarios/B01.json": "7e7975eaa2e19410c10eb8e445039d9dc2c662a18c52ebe7e4ca40ef4643e5f5",
+    "benchmarks/scenarios/B02.json": "95ea9d56d142a86a9c8ab91d7b5e57098f31cca3fb2978413082a074d0adc438",
+    "benchmarks/scenarios/B03.json": "8c6ff187e0ce74f23ad7ea2ed1eb3743c1e11edd0ec7ef8941b1094b28ae236e",
+    "benchmarks/scenarios/B04.json": "f4dad66e351dfd52945a63f0f4b683e19402ab591e11dc2c068837d7a9582235",
+    "benchmarks/scenarios/B05.json": "f324f44cebee4b40605a805e46965a5590cf93b173c9dbff5ca36b4f4d0bdb93",
+    "benchmarks/scenarios/B06.json": "b7593ca43d37b1b338e0b67b0b866fe692a96b44498349af41330cf416e99fda",
+    "benchmarks/scenarios/B07.json": "c09d718b87a2836b1673f09413452bbbf4de403916328ed81f214539bd8b1a2c",
+    "benchmarks/scenarios/B08.json": "017eb7f31a62d6c3230ef3db182c55b31c4905b9a50c0a32133ce4090b2d175f",
+    "benchmarks/scenarios/B09.json": "b19d79b3481441cb27f2aa19984939a2fcc91c5e91d95ff52fa346e59fb4ef1d",
+    "benchmarks/scenarios/B10.json": "9b28556ce7540b1a8edc8e05678bf02dbd1056c5e4013e73f5252920b4006142",
+    "benchmarks/scenarios/B11.json": "cc40b25707fce0cfed4911ea37b5c1eca679c1e6193b2e4db9918f7ac666af87",
+    "benchmarks/scenarios/B12.json": "fbbe3e7bbba37c79909ea08c0c96db4b4a9f5a214ad86c13b664f9b0f1f41f46",
+    "benchmarks/scenarios/B13.json": "bc74a99c8c446ae632111891f9486ca4ba10d6ab5d44eaf45e10c00042d6b04d",
+    "benchmarks/scenarios/B14.json": "f55350ee2a781b01d105a91ad53c2ad8b9228e474d0733ed43b39521d70bec3c",
+    "benchmarks/scenarios/B15.json": "d36ff9a431cf29fc195fbdbfe7ddd237d699b612bd648354461b510256128659",
+    "benchmarks/scenarios/B16.json": "50316c0e8a7610d245ee7d876e9b6cd8c6eb0ab68bcc44d58a49c3605776872c",
+    "benchmarks/scenarios/B17.json": "ebb3fdfbca016f66fb6caea2ceb387bdae33f7af62431cfce863ad96eb114bad",
+    "benchmarks/scenarios/B18.json": "a2b0889fcec7bfc8af674ca618c159f036f0eef5a10c4b04a540feba65e19ca8",
+    "benchmarks/scenarios/B19.json": "4a7d5ac8a8e18660ea654996420c83c3d7cebdaf1a5cd2f674090bb86b39c346",
+    "benchmarks/scenarios/B20.json": "507b5b171e822840fe49d2a0948ce9d83abca07c0455489d48a84f43c59f1f5a"
+  }
+}

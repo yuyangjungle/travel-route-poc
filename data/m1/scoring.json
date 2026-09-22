@@ -1,0 +1,26 @@
+{
+  "scoring_version": "score-v1",
+  "airport_buffer_minutes": 120,
+  "usable_day_start_local": "08:00",
+  "usable_day_end_local": "20:00",
+  "night_start_reference": "00:00",
+  "night_end_reference": "06:00",
+  "preferred_bonus_points": 10,
+  "burden_coefficients": {
+    "transit_hour": 1,
+    "flight_day": 2,
+    "connection": 1.5,
+    "night_hour": 1
+  },
+  "normalization_scales": {
+    "cost_minor": 300000,
+    "burden": 24,
+    "experience": 100
+  },
+  "ranking_weights": {
+    "cost": 0.35,
+    "comfort": 0.3,
+    "experience": 0.35
+  },
+  "score_rounding_digits": 6
+}

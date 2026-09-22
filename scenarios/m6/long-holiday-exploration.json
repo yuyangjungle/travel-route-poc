@@ -1,0 +1,44 @@
+{
+  "schema_version": "m6-scenario-v1",
+  "id": "m6-long-holiday-exploration",
+  "title": "长假探索｜目的地开放",
+  "traveler_profile": "时间较充裕、尚未决定目的地、希望发现非直觉组合的旅客",
+  "expected_user_intent": "让系统在多个国内出发机场和多类目的地之间探索，再比较便宜、少折腾和体验丰富的路线。",
+  "decision_priority": "发现新组合优先，同时保留成本和交通负担明显不同的备选。",
+  "must_have_constraints": [
+    "可从上海、杭州或南京出发",
+    "15–21 天",
+    "单人模拟机票预算不超过 12,000 元",
+    "不预设必去目的地"
+  ],
+  "dataset_path": "data/m5",
+  "offer_set_path": "scenarios/m6/offer_sets/m5-medium-v1.json",
+  "request": {
+    "request_id": "m6-long-holiday-exploration",
+    "origin_airport_ids": ["PVG", "HGH", "NKG"],
+    "return_airport_ids": ["PVG", "HGH", "NKG"],
+    "window_start_date": "2027-10-01",
+    "window_end_date": "2027-10-22",
+    "reference_timezone": "Asia/Shanghai",
+    "min_trip_days": 15,
+    "max_trip_days": 21,
+    "flight_budget_minor": 1200000,
+    "currency": "CNY",
+    "passenger_count": 1,
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "required_destination_ids": [],
+    "preferred_destination_ids": [],
+    "preference_weights": {
+      "island": 60,
+      "diving": 35,
+      "food": 75,
+      "culture": 80,
+      "nature": 70,
+      "city": 55,
+      "relaxation": 50
+    },
+    "max_optional_destinations": 4,
+    "max_connections_per_offer": 1,
+    "allow_self_transfer": false
+  }
+}

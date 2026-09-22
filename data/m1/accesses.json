@@ -1,0 +1,68 @@
+[
+  {
+    "id": "SEMPORNA_TWU",
+    "destination_id": "SEMPORNA",
+    "airport_id": "TWU",
+    "to_destination_minutes": 60,
+    "to_airport_minutes": 60,
+    "to_destination_cost_minor": 5000,
+    "to_airport_cost_minor": 5000,
+    "source_note": "Synthetic fixed 60 minutes each way, available at any time; not a real transfer schedule.",
+    "is_mock": true
+  },
+  {
+    "id": "KOTA_BKI",
+    "destination_id": "KOTA",
+    "airport_id": "BKI",
+    "to_destination_minutes": 60,
+    "to_airport_minutes": 60,
+    "to_destination_cost_minor": 5000,
+    "to_airport_cost_minor": 5000,
+    "source_note": "Synthetic fixed 60 minutes each way, available at any time; not a real transfer schedule.",
+    "is_mock": true
+  },
+  {
+    "id": "KL_KUL",
+    "destination_id": "KL",
+    "airport_id": "KUL",
+    "to_destination_minutes": 60,
+    "to_airport_minutes": 60,
+    "to_destination_cost_minor": 5000,
+    "to_airport_cost_minor": 5000,
+    "source_note": "Synthetic fixed 60 minutes each way, available at any time; not a real transfer schedule.",
+    "is_mock": true
+  },
+  {
+    "id": "SAIGON_SGN",
+    "destination_id": "SAIGON",
+    "airport_id": "SGN",
+    "to_destination_minutes": 60,
+    "to_airport_minutes": 60,
+    "to_destination_cost_minor": 5000,
+    "to_airport_cost_minor": 5000,
+    "source_note": "Synthetic fixed 60 minutes each way, available at any time; not a real transfer schedule.",
+    "is_mock": true
+  },
+  {
+    "id": "BALI_DPS",
+    "destination_id": "BALI",
+    "airport_id": "DPS",
+    "to_destination_minutes": 60,
+    "to_airport_minutes": 60,
+    "to_destination_cost_minor": 5000,
+    "to_airport_cost_minor": 5000,
+    "source_note": "Synthetic fixed 60 minutes each way, available at any time; not a real transfer schedule.",
+    "is_mock": true
+  },
+  {
+    "id": "PHUKET_HKT",
+    "destination_id": "PHUKET",
+    "airport_id": "HKT",
+    "to_destination_minutes": 60,
+    "to_airport_minutes": 60,
+    "to_destination_cost_minor": 5000,
+    "to_airport_cost_minor": 5000,
+    "source_note": "Synthetic fixed 60 minutes each way, available at any time; not a real transfer schedule.",
+    "is_mock": true
+  }
+]

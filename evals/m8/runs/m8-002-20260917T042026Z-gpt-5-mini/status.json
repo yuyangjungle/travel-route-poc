@@ -1,0 +1,8 @@
+{
+  "status": "blocked",
+  "at": "2026-09-17T04:20:26.375615+00:00",
+  "reason": {
+    "code": "missing_api_key",
+    "message": "OPENAI_API_KEY is not configured; zero API calls made."
+  }
+}

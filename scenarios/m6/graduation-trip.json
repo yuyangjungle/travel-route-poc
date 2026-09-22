@@ -1,0 +1,44 @@
+{
+  "schema_version": "m6-scenario-v1",
+  "id": "m6-graduation-trip",
+  "title": "毕业旅行｜海岛与美食",
+  "traveler_profile": "预算有限、愿意多看一个地点的年轻结伴旅客",
+  "expected_user_intent": "在预算内发现兼顾海滩、美食和放松的组合，并判断多停一站是否值得。",
+  "decision_priority": "先控制机票预算，再比较海岛体验与额外交通负担。",
+  "must_have_constraints": [
+    "从杭州出发",
+    "9–15 天",
+    "单人模拟机票预算不超过 5,500 元",
+    "最多增加 2 个目的地"
+  ],
+  "dataset_path": "data/m5",
+  "offer_set_path": "scenarios/m6/offer_sets/m5-medium-v1.json",
+  "request": {
+    "request_id": "m6-graduation-trip",
+    "origin_airport_ids": ["HGH"],
+    "return_airport_ids": ["PVG", "HGH", "NKG"],
+    "window_start_date": "2027-10-01",
+    "window_end_date": "2027-10-22",
+    "reference_timezone": "Asia/Shanghai",
+    "min_trip_days": 9,
+    "max_trip_days": 15,
+    "flight_budget_minor": 550000,
+    "currency": "CNY",
+    "passenger_count": 1,
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "required_destination_ids": [],
+    "preferred_destination_ids": ["BALI", "PHUKET", "CEBU"],
+    "preference_weights": {
+      "island": 90,
+      "diving": 30,
+      "food": 90,
+      "culture": 30,
+      "nature": 60,
+      "city": 35,
+      "relaxation": 80
+    },
+    "max_optional_destinations": 2,
+    "max_connections_per_offer": 1,
+    "allow_self_transfer": false
+  }
+}

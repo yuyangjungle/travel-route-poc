@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.streamlit/secrets.toml
+.env
+reports/*.log
+.vercel/
+.env.*
+!.env.example
+.venv-*/
+node_modules/
+*.zip
+
+.vercel
+.env*
+!.env.example
+reports/m9-*.png

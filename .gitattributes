@@ -1,0 +1,2 @@
+# Frozen fixtures and evaluation hashes use exact bytes across Windows/Linux.
+* -text

@@ -1,0 +1,398 @@
+[
+  {
+    "id": "pvg_twu",
+    "origin_airport_id": "PVG",
+    "destination_airport_id": "TWU",
+    "departure_at": "2026-10-03T08:00:00+08:00",
+    "arrival_at": "2026-10-03T14:00:00+08:00",
+    "segments": [
+      {
+        "id": "pvg_twu-s1",
+        "origin_airport_id": "PVG",
+        "destination_airport_id": "TWU",
+        "departure_at": "2026-10-03T08:00:00+08:00",
+        "arrival_at": "2026-10-03T14:00:00+08:00"
+      }
+    ],
+    "price_minor": 180000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 0,
+    "self_transfer": false,
+    "protected_connection": false,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:pvg_twu",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "twu_pvg",
+    "origin_airport_id": "TWU",
+    "destination_airport_id": "PVG",
+    "departure_at": "2026-10-14T12:00:00+08:00",
+    "arrival_at": "2026-10-14T18:00:00+08:00",
+    "segments": [
+      {
+        "id": "twu_pvg-s1",
+        "origin_airport_id": "TWU",
+        "destination_airport_id": "PVG",
+        "departure_at": "2026-10-14T12:00:00+08:00",
+        "arrival_at": "2026-10-14T18:00:00+08:00"
+      }
+    ],
+    "price_minor": 180000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 0,
+    "self_transfer": false,
+    "protected_connection": false,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:twu_pvg",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "twu_kul",
+    "origin_airport_id": "TWU",
+    "destination_airport_id": "KUL",
+    "departure_at": "2026-10-09T12:00:00+08:00",
+    "arrival_at": "2026-10-09T15:00:00+08:00",
+    "segments": [
+      {
+        "id": "twu_kul-s1",
+        "origin_airport_id": "TWU",
+        "destination_airport_id": "KUL",
+        "departure_at": "2026-10-09T12:00:00+08:00",
+        "arrival_at": "2026-10-09T15:00:00+08:00"
+      }
+    ],
+    "price_minor": 30000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 0,
+    "self_transfer": false,
+    "protected_connection": false,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:twu_kul",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "kul_hgh",
+    "origin_airport_id": "KUL",
+    "destination_airport_id": "HGH",
+    "departure_at": "2026-10-14T12:00:00+08:00",
+    "arrival_at": "2026-10-14T17:00:00+08:00",
+    "segments": [
+      {
+        "id": "kul_hgh-s1",
+        "origin_airport_id": "KUL",
+        "destination_airport_id": "HGH",
+        "departure_at": "2026-10-14T12:00:00+08:00",
+        "arrival_at": "2026-10-14T17:00:00+08:00"
+      }
+    ],
+    "price_minor": 70000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 0,
+    "self_transfer": false,
+    "protected_connection": false,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:kul_hgh",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "long_return",
+    "origin_airport_id": "TWU",
+    "destination_airport_id": "PVG",
+    "departure_at": "2026-10-14T00:30:00+08:00",
+    "arrival_at": "2026-10-15T06:00:00+08:00",
+    "segments": [
+      {
+        "id": "long_return-s1",
+        "origin_airport_id": "TWU",
+        "destination_airport_id": "BKI",
+        "departure_at": "2026-10-14T00:30:00+08:00",
+        "arrival_at": "2026-10-14T01:30:00+08:00"
+      },
+      {
+        "id": "long_return-s2",
+        "origin_airport_id": "BKI",
+        "destination_airport_id": "SIN",
+        "departure_at": "2026-10-14T08:00:00+08:00",
+        "arrival_at": "2026-10-14T10:00:00+08:00"
+      },
+      {
+        "id": "long_return-s3",
+        "origin_airport_id": "SIN",
+        "destination_airport_id": "PVG",
+        "departure_at": "2026-10-15T01:00:00+08:00",
+        "arrival_at": "2026-10-15T06:00:00+08:00"
+      }
+    ],
+    "price_minor": 100000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 2,
+    "self_transfer": false,
+    "protected_connection": true,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:long_return",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "transit_twu_to_bali",
+    "origin_airport_id": "PVG",
+    "destination_airport_id": "DPS",
+    "departure_at": "2026-10-03T08:00:00+08:00",
+    "arrival_at": "2026-10-03T18:00:00+08:00",
+    "segments": [
+      {
+        "id": "transit_twu_to_bali-s1",
+        "origin_airport_id": "PVG",
+        "destination_airport_id": "TWU",
+        "departure_at": "2026-10-03T08:00:00+08:00",
+        "arrival_at": "2026-10-03T14:00:00+08:00"
+      },
+      {
+        "id": "transit_twu_to_bali-s2",
+        "origin_airport_id": "TWU",
+        "destination_airport_id": "DPS",
+        "departure_at": "2026-10-03T15:00:00+08:00",
+        "arrival_at": "2026-10-03T18:00:00+08:00"
+      }
+    ],
+    "price_minor": 120000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 1,
+    "self_transfer": false,
+    "protected_connection": true,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:transit_twu_to_bali",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "dps_pvg",
+    "origin_airport_id": "DPS",
+    "destination_airport_id": "PVG",
+    "departure_at": "2026-10-14T12:00:00+08:00",
+    "arrival_at": "2026-10-14T18:00:00+08:00",
+    "segments": [
+      {
+        "id": "dps_pvg-s1",
+        "origin_airport_id": "DPS",
+        "destination_airport_id": "PVG",
+        "departure_at": "2026-10-14T12:00:00+08:00",
+        "arrival_at": "2026-10-14T18:00:00+08:00"
+      }
+    ],
+    "price_minor": 100000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 0,
+    "self_transfer": false,
+    "protected_connection": false,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:dps_pvg",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "twu_kul_short",
+    "origin_airport_id": "TWU",
+    "destination_airport_id": "KUL",
+    "departure_at": "2026-10-05T12:00:00+08:00",
+    "arrival_at": "2026-10-05T15:00:00+08:00",
+    "segments": [
+      {
+        "id": "twu_kul_short-s1",
+        "origin_airport_id": "TWU",
+        "destination_airport_id": "KUL",
+        "departure_at": "2026-10-05T12:00:00+08:00",
+        "arrival_at": "2026-10-05T15:00:00+08:00"
+      }
+    ],
+    "price_minor": 30000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 0,
+    "self_transfer": false,
+    "protected_connection": false,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:twu_kul_short",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "midnight_return",
+    "origin_airport_id": "TWU",
+    "destination_airport_id": "PVG",
+    "departure_at": "2026-10-14T20:00:00+08:00",
+    "arrival_at": "2026-10-15T00:00:00+08:00",
+    "segments": [
+      {
+        "id": "midnight_return-s1",
+        "origin_airport_id": "TWU",
+        "destination_airport_id": "PVG",
+        "departure_at": "2026-10-14T20:00:00+08:00",
+        "arrival_at": "2026-10-15T00:00:00+08:00"
+      }
+    ],
+    "price_minor": 180000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 0,
+    "self_transfer": false,
+    "protected_connection": false,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:midnight_return",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "early_return",
+    "origin_airport_id": "TWU",
+    "destination_airport_id": "PVG",
+    "departure_at": "2026-10-14T01:00:00+08:00",
+    "arrival_at": "2026-10-14T07:00:00+08:00",
+    "segments": [
+      {
+        "id": "early_return-s1",
+        "origin_airport_id": "TWU",
+        "destination_airport_id": "PVG",
+        "departure_at": "2026-10-14T01:00:00+08:00",
+        "arrival_at": "2026-10-14T07:00:00+08:00"
+      }
+    ],
+    "price_minor": 180000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 0,
+    "self_transfer": false,
+    "protected_connection": false,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:early_return",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "pvg_sgn",
+    "origin_airport_id": "PVG",
+    "destination_airport_id": "SGN",
+    "departure_at": "2026-10-03T08:00:00+08:00",
+    "arrival_at": "2026-10-03T11:00:00+07:00",
+    "segments": [
+      {
+        "id": "pvg_sgn-s1",
+        "origin_airport_id": "PVG",
+        "destination_airport_id": "SGN",
+        "departure_at": "2026-10-03T08:00:00+08:00",
+        "arrival_at": "2026-10-03T11:00:00+07:00"
+      }
+    ],
+    "price_minor": 100000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 0,
+    "self_transfer": false,
+    "protected_connection": false,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:pvg_sgn",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "sgn_pvg",
+    "origin_airport_id": "SGN",
+    "destination_airport_id": "PVG",
+    "departure_at": "2026-10-14T21:00:00+07:00",
+    "arrival_at": "2026-10-15T02:00:00+08:00",
+    "segments": [
+      {
+        "id": "sgn_pvg-s1",
+        "origin_airport_id": "SGN",
+        "destination_airport_id": "PVG",
+        "departure_at": "2026-10-14T21:00:00+07:00",
+        "arrival_at": "2026-10-15T02:00:00+08:00"
+      }
+    ],
+    "price_minor": 100000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 0,
+    "self_transfer": false,
+    "protected_connection": false,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:sgn_pvg",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "hgh_twu",
+    "origin_airport_id": "HGH",
+    "destination_airport_id": "TWU",
+    "departure_at": "2026-10-03T08:00:00+08:00",
+    "arrival_at": "2026-10-03T14:00:00+08:00",
+    "segments": [
+      {
+        "id": "hgh_twu-s1",
+        "origin_airport_id": "HGH",
+        "destination_airport_id": "TWU",
+        "departure_at": "2026-10-03T08:00:00+08:00",
+        "arrival_at": "2026-10-03T14:00:00+08:00"
+      }
+    ],
+    "price_minor": 160000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 0,
+    "self_transfer": false,
+    "protected_connection": false,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:hgh_twu",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "pvg_hkt",
+    "origin_airport_id": "PVG",
+    "destination_airport_id": "HKT",
+    "departure_at": "2026-10-03T08:00:00+08:00",
+    "arrival_at": "2026-10-03T12:00:00+07:00",
+    "segments": [
+      {
+        "id": "pvg_hkt-s1",
+        "origin_airport_id": "PVG",
+        "destination_airport_id": "HKT",
+        "departure_at": "2026-10-03T08:00:00+08:00",
+        "arrival_at": "2026-10-03T12:00:00+07:00"
+      }
+    ],
+    "price_minor": 150000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 0,
+    "self_transfer": false,
+    "protected_connection": false,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:pvg_hkt",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  },
+  {
+    "id": "hkt_pvg",
+    "origin_airport_id": "HKT",
+    "destination_airport_id": "PVG",
+    "departure_at": "2026-10-14T12:00:00+07:00",
+    "arrival_at": "2026-10-14T18:00:00+08:00",
+    "segments": [
+      {
+        "id": "hkt_pvg-s1",
+        "origin_airport_id": "HKT",
+        "destination_airport_id": "PVG",
+        "departure_at": "2026-10-14T12:00:00+07:00",
+        "arrival_at": "2026-10-14T18:00:00+08:00"
+      }
+    ],
+    "price_minor": 150000,
+    "currency": "CNY",
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "connection_count": 0,
+    "self_transfer": false,
+    "protected_connection": false,
+    "source_type": "mock",
+    "source_ref": "m1-hand-authored:hkt_pvg",
+    "observed_at": "2026-09-15T12:00:00+08:00"
+  }
+]

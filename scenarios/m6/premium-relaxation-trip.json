@@ -1,0 +1,44 @@
+{
+  "schema_version": "m6-scenario-v1",
+  "id": "m6-premium-relaxation-trip",
+  "title": "品质放松｜少折腾优先",
+  "traveler_profile": "预算较高、愿意为更少转场和更轻松节奏付费的旅客",
+  "expected_user_intent": "比较高匹配海岛与低交通负担方案，理解多花的钱是否换来了更轻松的路线。",
+  "decision_priority": "低交通负担优先；偏好放松和自然，不追求堆叠目的地。",
+  "must_have_constraints": [
+    "从上海出发",
+    "10–16 天",
+    "每张单程报价不允许中转",
+    "最多增加 1 个目的地"
+  ],
+  "dataset_path": "data/m5",
+  "offer_set_path": "scenarios/m6/offer_sets/m5-medium-v1.json",
+  "request": {
+    "request_id": "m6-premium-relaxation-trip",
+    "origin_airport_ids": ["PVG"],
+    "return_airport_ids": ["PVG", "HGH", "NKG"],
+    "window_start_date": "2027-10-01",
+    "window_end_date": "2027-10-22",
+    "reference_timezone": "Asia/Shanghai",
+    "min_trip_days": 10,
+    "max_trip_days": 16,
+    "flight_budget_minor": 1800000,
+    "currency": "CNY",
+    "passenger_count": 1,
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "required_destination_ids": [],
+    "preferred_destination_ids": ["BALI", "PHUKET", "PALAWAN"],
+    "preference_weights": {
+      "island": 85,
+      "diving": 30,
+      "food": 55,
+      "culture": 20,
+      "nature": 80,
+      "city": 15,
+      "relaxation": 100
+    },
+    "max_optional_destinations": 1,
+    "max_connections_per_offer": 0,
+    "allow_self_transfer": false
+  }
+}

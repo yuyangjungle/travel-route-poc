@@ -1,0 +1,55 @@
+{
+  "id": "B14",
+  "title": "Missing return edge",
+  "hypothesis": "The engine must never invent a return flight.",
+  "requirement_ids": [
+    "FR-04",
+    "FR-08"
+  ],
+  "assumption_ids": [
+    "A-08"
+  ],
+  "offer_ids": [
+    "pvg_twu",
+    "twu_kul"
+  ],
+  "request": {
+    "request_id": "B14",
+    "origin_airport_ids": [
+      "PVG"
+    ],
+    "return_airport_ids": [
+      "PVG",
+      "HGH"
+    ],
+    "window_start_date": "2026-10-01",
+    "window_end_date": "2026-10-31",
+    "reference_timezone": "Asia/Shanghai",
+    "min_trip_days": 12,
+    "max_trip_days": 18,
+    "flight_budget_minor": 500000,
+    "currency": "CNY",
+    "passenger_count": 1,
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "required_destination_ids": [
+      "SEMPORNA"
+    ],
+    "preferred_destination_ids": [],
+    "preference_weights": {
+      "island": 100,
+      "diving": 0,
+      "food": 0
+    },
+    "max_optional_destinations": 4,
+    "max_connections_per_offer": 2,
+    "allow_self_transfer": false
+  },
+  "expected_request_status": "ok",
+  "witnesses": [],
+  "comparisons": [],
+  "expected_search_status": "no_feasible_in_dataset",
+  "infeasibility_certificate": {
+    "type": "no_return_offer",
+    "explanation": "No allowed offer ends at PVG or HGH; a complete return is impossible within this isolated fixture."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "benchmark_version": "m5-scalability-v1",
+  "dataset_id": "asia-pacific-m5-synthetic",
+  "measurement_note": "Runtime is the median of three uninstrumented exact-search runs and excludes dataset loading. Peak memory is measured in a separate identical run with tracemalloc and covers Python allocations only.",
+  "environment": {
+    "python": "3.12.1",
+    "platform": "Windows-11-10.0.22631-SP0"
+  },
+  "cases": [
+    {
+      "case_id": "small",
+      "hypothesis": "Exact search can interactively compare a focused regional set containing hubs, islands and one required destination.",
+      "active_destination_count": 8,
+      "active_airport_count": 11,
+      "allowed_offer_count": 84,
+      "max_optional_destinations": 2,
+      "expanded_states": 71,
+      "runtime_ms": 68.043,
+      "runtime_samples_ms": [
+        68.043,
+        67.882,
+        68.764
+      ],
+      "peak_traced_memory_bytes": 190626,
+      "feasible_candidate_count": 40,
+      "pareto_candidate_count": 6,
+      "recommendation_count": 5,
+      "result_digest": "eaa51071e97b8623509b9b9c7ce9a710461bd025c79ebdfa480e57937bef4db7",
+      "status": "ok"
+    },
+    {
+      "case_id": "medium",
+      "hypothesis": "Exact search remains usable when a traveler is open to a broader Asia network with several hub and island alternatives.",
+      "active_destination_count": 18,
+      "active_airport_count": 21,
+      "allowed_offer_count": 264,
+      "max_optional_destinations": 3,
+      "expanded_states": 1026,
+      "runtime_ms": 383.414,
+      "runtime_samples_ms": [
+        381.245,
+        398.257,
+        383.414
+      ],
+      "peak_traced_memory_bytes": 714818,
+      "feasible_candidate_count": 189,
+      "pareto_candidate_count": 22,
+      "recommendation_count": 5,
+      "result_digest": "6055e6312584fef79fbaece2907afb4e074f17871cbf6f3eb606a8b31803ac64",
+      "status": "ok"
+    },
+    {
+      "case_id": "large",
+      "hypothesis": "A near-MVP catalog exposes the point where the current exhaustive DFS and complete-result retention stop being practical.",
+      "active_destination_count": 40,
+      "active_airport_count": 43,
+      "allowed_offer_count": 756,
+      "max_optional_destinations": 4,
+      "expanded_states": 12177,
+      "runtime_ms": 7041.562,
+      "runtime_samples_ms": [
+        6968.042,
+        7041.562,
+        7084.227
+      ],
+      "peak_traced_memory_bytes": 2569465,
+      "feasible_candidate_count": 647,
+      "pareto_candidate_count": 32,
+      "recommendation_count": 5,
+      "result_digest": "2346f39ed578f01c65be051b509506b858c6cea1e694181ceb7b603f182a92ef",
+      "status": "ok"
+    }
+  ]
+}

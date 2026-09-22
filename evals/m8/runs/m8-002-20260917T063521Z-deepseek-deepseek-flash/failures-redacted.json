@@ -1,0 +1,5451 @@
+{
+  "error_class_counts": {
+    "none": 139,
+    "blocking_error": 158,
+    "correctable_error": 29,
+    "dangerous_semantic_error": 34
+  },
+  "material_error_count": 221,
+  "category_counts": {
+    "adversarial_or_malformed": {
+      "blocking_error": 18
+    },
+    "ambiguous_airport_city": {
+      "blocking_error": 10,
+      "dangerous_semantic_error": 20
+    },
+    "approximate_budget": {
+      "blocking_error": 6
+    },
+    "approximate_duration": {
+      "blocking_error": 30
+    },
+    "budget": {
+      "blocking_error": 27
+    },
+    "catalog_external_destination": {
+      "blocking_error": 10,
+      "dangerous_semantic_error": 20
+    },
+    "conflicting_constraints": {
+      "dangerous_semantic_error": 7,
+      "blocking_error": 23
+    },
+    "duration": {
+      "blocking_error": 18
+    },
+    "explicit_dates": {
+      "blocking_error": 18
+    },
+    "legitimate_ambiguity": {
+      "blocking_error": 30
+    },
+    "missing_budget": {
+      "blocking_error": 9
+    },
+    "missing_date": {
+      "blocking_error": 2,
+      "dangerous_semantic_error": 7
+    },
+    "missing_duration": {
+      "blocking_error": 6
+    },
+    "missing_information": {
+      "blocking_error": 23,
+      "dangerous_semantic_error": 7
+    },
+    "missing_origin": {
+      "blocking_error": 6
+    },
+    "mixed_language": {
+      "blocking_error": 11
+    },
+    "natural_preference_weights": {
+      "correctable_error": 25,
+      "blocking_error": 5
+    },
+    "preferred_destination": {
+      "blocking_error": 36,
+      "correctable_error": 29
+    },
+    "prompt_injection": {
+      "blocking_error": 18
+    },
+    "required_destination": {
+      "blocking_error": 38
+    },
+    "transfer_tolerance": {
+      "correctable_error": 4,
+      "blocking_error": 5
+    },
+    "vague_date_window": {
+      "blocking_error": 30
+    },
+    "vague_month": {
+      "blocking_error": 17
+    }
+  },
+  "examples": [
+    {
+      "case_id": "M8-014",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-015",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-023",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-037",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-10",
+          "actual": "2027-10-20"
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-038",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-039",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-21",
+          "actual": "2027-10-15"
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "CEBU"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-040",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-041",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-043",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "SINGAPORE"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-044",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-11",
+          "actual": "2027-10-08"
+        },
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-20",
+          "actual": "2027-10-25"
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "BANGKOK"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-045",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-21",
+          "actual": "2027-10-15"
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-046",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-047",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-051",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "approximate_budget",
+        "vague_month",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-061",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "required_destination",
+        "preferred_destination",
+        "budget"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-062",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "required_destination",
+        "preferred_destination",
+        "budget"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "HGH"
+          ],
+          "actual": null
+        },
+        {
+          "field": "required_destination_ids",
+          "severity": "critical",
+          "expected": [
+            "BALI"
+          ],
+          "actual": null
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "TOKYO"
+          ],
+          "actual": null
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "critical",
+          "expected": 7,
+          "actual": null
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "critical",
+          "expected": 12,
+          "actual": null
+        },
+        {
+          "field": "flight_budget_cny",
+          "severity": "critical",
+          "expected": 5250,
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-065",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "required_destination",
+        "preferred_destination",
+        "budget"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-067",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "required_destination",
+        "preferred_destination",
+        "budget"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "PVG"
+          ],
+          "actual": null
+        },
+        {
+          "field": "required_destination_ids",
+          "severity": "critical",
+          "expected": [
+            "SINGAPORE"
+          ],
+          "actual": null
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "DANANG"
+          ],
+          "actual": null
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "critical",
+          "expected": 7,
+          "actual": null
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "critical",
+          "expected": 12,
+          "actual": null
+        },
+        {
+          "field": "flight_budget_cny",
+          "severity": "critical",
+          "expected": 6500,
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-073",
+      "repeat": 1,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 90,
+            "diving": 100,
+            "food": 60,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          },
+          "actual": {
+            "city": 0,
+            "culture": 0,
+            "diving": 10,
+            "food": 5,
+            "island": 7,
+            "nature": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-074",
+      "repeat": 1,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 100,
+            "culture": 80,
+            "nature": 0,
+            "city": 40,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 10,
+            "culture": 6,
+            "nature": 0,
+            "city": 2,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-075",
+      "repeat": 1,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 0,
+            "culture": 0,
+            "nature": 80,
+            "city": 0,
+            "relaxation": 100
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 0,
+            "culture": 0,
+            "nature": 4,
+            "city": 0,
+            "relaxation": 5
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-076",
+      "repeat": 1,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 90,
+            "diving": 100,
+            "food": 60,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 3,
+            "diving": 5,
+            "food": 2,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-077",
+      "repeat": 1,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 100,
+            "culture": 80,
+            "nature": 0,
+            "city": 40,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 3,
+            "culture": 2,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-079",
+      "repeat": 1,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 90,
+            "diving": 100,
+            "food": 60,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 8,
+            "diving": 10,
+            "food": 7,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-080",
+      "repeat": 1,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 100,
+            "culture": 80,
+            "nature": 0,
+            "city": 40,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 5,
+            "culture": 3,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-081",
+      "repeat": 1,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 0,
+            "culture": 0,
+            "nature": 80,
+            "city": 0,
+            "relaxation": 100
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 0,
+            "culture": 0,
+            "nature": 5,
+            "city": 0,
+            "relaxation": 5
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-082",
+      "repeat": 1,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 90,
+            "diving": 100,
+            "food": 60,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 3,
+            "diving": 5,
+            "food": 3,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-083",
+      "repeat": 1,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 100,
+            "culture": 80,
+            "nature": 0,
+            "city": 40,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 10,
+            "culture": 6,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-087",
+      "repeat": 1,
+      "error_class": "correctable_error",
+      "categories": [
+        "transfer_tolerance",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "CEBU"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-088",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "transfer_tolerance",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-091",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "transfer_tolerance",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "PVG"
+          ],
+          "actual": null
+        },
+        {
+          "field": "max_connections_per_offer",
+          "severity": "critical",
+          "expected": 0,
+          "actual": null
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "SINGAPORE"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-094",
+      "repeat": 1,
+      "error_class": "correctable_error",
+      "categories": [
+        "transfer_tolerance",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "DANANG"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-095",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "transfer_tolerance",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "HGH"
+          ],
+          "actual": null
+        },
+        {
+          "field": "max_connections_per_offer",
+          "severity": "critical",
+          "expected": 1,
+          "actual": null
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "PENANG"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-097",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_date"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-098",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_duration"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-099",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_budget"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-100",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_origin"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "PHUKET"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-101",
+      "repeat": 1,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "missing_information",
+        "missing_date"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-103",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_budget"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-104",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_origin"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-105",
+      "repeat": 1,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "missing_information",
+        "missing_date"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-106",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_duration"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-107",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_budget"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-109",
+      "repeat": 1,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-110",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-111",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-112",
+      "repeat": 1,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-113",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-115",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-116",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-117",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-118",
+      "repeat": 1,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-119",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-121",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "SEMPORNA"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 2
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-122",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-123",
+      "repeat": 1,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 1,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-124",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-125",
+      "repeat": 1,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-127",
+      "repeat": 1,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-128",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-129",
+      "repeat": 1,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-130",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "DANANG"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 2
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-131",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-133",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-135",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-136",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 2,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-139",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-141",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-142",
+      "repeat": 1,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-002",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-004",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-005",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "HGH"
+          ],
+          "actual": null
+        },
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-02",
+          "actual": null
+        },
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-18",
+          "actual": null
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "critical",
+          "expected": 10,
+          "actual": null
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "critical",
+          "expected": 14,
+          "actual": null
+        },
+        {
+          "field": "flight_budget_cny",
+          "severity": "critical",
+          "expected": 6000,
+          "actual": null
+        },
+        {
+          "field": "required_destination_ids",
+          "severity": "critical",
+          "expected": [
+            "TOKYO"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-008",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "HGH"
+          ],
+          "actual": null
+        },
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-05",
+          "actual": null
+        },
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-21",
+          "actual": null
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "critical",
+          "expected": 10,
+          "actual": null
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "critical",
+          "expected": 14,
+          "actual": null
+        },
+        {
+          "field": "flight_budget_cny",
+          "severity": "critical",
+          "expected": 6750,
+          "actual": null
+        },
+        {
+          "field": "required_destination_ids",
+          "severity": "critical",
+          "expected": [
+            "BANGKOK"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-009",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-014",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "HGH"
+          ],
+          "actual": null
+        },
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-03",
+          "actual": null
+        },
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-19",
+          "actual": null
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "critical",
+          "expected": 9,
+          "actual": null
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "critical",
+          "expected": 12,
+          "actual": null
+        },
+        {
+          "field": "flight_budget_cny",
+          "severity": "critical",
+          "expected": 5250,
+          "actual": null
+        },
+        {
+          "field": "required_destination_ids",
+          "severity": "critical",
+          "expected": [
+            "BALI"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-016",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-021",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "NKG"
+          ],
+          "actual": null
+        },
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-02",
+          "actual": null
+        },
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-18",
+          "actual": null
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "critical",
+          "expected": 9,
+          "actual": null
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "critical",
+          "expected": 12,
+          "actual": null
+        },
+        {
+          "field": "flight_budget_cny",
+          "severity": "critical",
+          "expected": 7000,
+          "actual": null
+        },
+        {
+          "field": "required_destination_ids",
+          "severity": "critical",
+          "expected": [
+            "PALAWAN"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-023",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-025",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "mixed_language",
+        "vague_month",
+        "required_destination",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-027",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "mixed_language",
+        "vague_month",
+        "required_destination",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-028",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "mixed_language",
+        "vague_month",
+        "required_destination",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "PVG"
+          ],
+          "actual": null
+        },
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-01",
+          "actual": null
+        },
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-31",
+          "actual": null
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "critical",
+          "expected": 12,
+          "actual": null
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "critical",
+          "expected": 16,
+          "actual": null
+        },
+        {
+          "field": "flight_budget_cny",
+          "severity": "critical",
+          "expected": 5750,
+          "actual": null
+        },
+        {
+          "field": "required_destination_ids",
+          "severity": "critical",
+          "expected": [
+            "PHUKET"
+          ],
+          "actual": null
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "TOKYO"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-032",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "mixed_language",
+        "vague_month",
+        "required_destination",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-035",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "mixed_language",
+        "vague_month",
+        "required_destination",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-037",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-038",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "min_trip_days",
+          "severity": "major",
+          "expected": 12,
+          "actual": 13
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "BALI"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-039",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-21",
+          "actual": "2027-10-15"
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "major",
+          "expected": 12,
+          "actual": 13
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "CEBU"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-040",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-01",
+          "actual": "2027-09-25"
+        },
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-10",
+          "actual": "2027-10-15"
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "PHUKET"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-041",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-043",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "min_trip_days",
+          "severity": "major",
+          "expected": 12,
+          "actual": 13
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "major",
+          "expected": 16,
+          "actual": 15
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-044",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "min_trip_days",
+          "severity": "major",
+          "expected": 12,
+          "actual": 13
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "BANGKOK"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-045",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-21",
+          "actual": "2027-10-15"
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-046",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "DANANG"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-047",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-050",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "approximate_budget",
+        "vague_month",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-051",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "approximate_budget",
+        "vague_month",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-061",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "required_destination",
+        "preferred_destination",
+        "budget"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "PVG"
+          ],
+          "actual": null
+        },
+        {
+          "field": "required_destination_ids",
+          "severity": "critical",
+          "expected": [
+            "SEMPORNA"
+          ],
+          "actual": null
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "PHUKET"
+          ],
+          "actual": null
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "critical",
+          "expected": 7,
+          "actual": null
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "critical",
+          "expected": 12,
+          "actual": null
+        },
+        {
+          "field": "flight_budget_cny",
+          "severity": "critical",
+          "expected": 5000,
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-067",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "required_destination",
+        "preferred_destination",
+        "budget"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-069",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "required_destination",
+        "preferred_destination",
+        "budget"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-073",
+      "repeat": 2,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 90,
+            "diving": 100,
+            "food": 60,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 7,
+            "diving": 10,
+            "food": 5,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-074",
+      "repeat": 2,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 100,
+            "culture": 80,
+            "nature": 0,
+            "city": 40,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 5,
+            "culture": 3,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-075",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 0,
+            "culture": 0,
+            "nature": 80,
+            "city": 0,
+            "relaxation": 100
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 0,
+            "culture": 0,
+            "nature": 4,
+            "city": 0,
+            "relaxation": 5
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-076",
+      "repeat": 2,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 90,
+            "diving": 100,
+            "food": 60,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 4,
+            "diving": 5,
+            "food": 3,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-077",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 100,
+            "culture": 80,
+            "nature": 0,
+            "city": 40,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 5,
+            "culture": 4,
+            "nature": 0,
+            "city": 1,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-079",
+      "repeat": 2,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 90,
+            "diving": 100,
+            "food": 60,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 4,
+            "diving": 5,
+            "food": 3,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-080",
+      "repeat": 2,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 100,
+            "culture": 80,
+            "nature": 0,
+            "city": 40,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 5,
+            "culture": 3,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-081",
+      "repeat": 2,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 0,
+            "culture": 0,
+            "nature": 80,
+            "city": 0,
+            "relaxation": 100
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 0,
+            "culture": 0,
+            "nature": 4,
+            "city": 0,
+            "relaxation": 5
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-082",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 90,
+            "diving": 100,
+            "food": 60,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 3,
+            "diving": 5,
+            "food": 3,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-083",
+      "repeat": 2,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 100,
+            "culture": 80,
+            "nature": 0,
+            "city": 40,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 9,
+            "culture": 6,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-085",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "transfer_tolerance",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "PVG"
+          ],
+          "actual": null
+        },
+        {
+          "field": "max_connections_per_offer",
+          "severity": "critical",
+          "expected": 0,
+          "actual": null
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "SEMPORNA"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-094",
+      "repeat": 2,
+      "error_class": "correctable_error",
+      "categories": [
+        "transfer_tolerance",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "DANANG"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-097",
+      "repeat": 2,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "missing_information",
+        "missing_date"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-098",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_duration"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-099",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_budget"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "CEBU"
+          ],
+          "actual": null
+        },
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "NKG"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-100",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_origin"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-101",
+      "repeat": 2,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "missing_information",
+        "missing_date"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-103",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_budget"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "SINGAPORE"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-104",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_origin"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-105",
+      "repeat": 2,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "missing_information",
+        "missing_date"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-106",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_duration"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-107",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_budget"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-109",
+      "repeat": 2,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-110",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-111",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-112",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-113",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-115",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "PVG"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-116",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-117",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-118",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-119",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-121",
+      "repeat": 2,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-122",
+      "repeat": 2,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-123",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 1,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-124",
+      "repeat": 2,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-125",
+      "repeat": 2,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-127",
+      "repeat": 2,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-128",
+      "repeat": 2,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-129",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 1,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-130",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-131",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "PENANG"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 2
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-133",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 2,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-135",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 2,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-136",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-139",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-141",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-142",
+      "repeat": 2,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-003",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-014",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-016",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-017",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-019",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-020",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "explicit_dates",
+        "duration",
+        "budget",
+        "required_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-025",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "mixed_language",
+        "vague_month",
+        "required_destination",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "PVG"
+          ],
+          "actual": null
+        },
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-01",
+          "actual": null
+        },
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-31",
+          "actual": null
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "critical",
+          "expected": 12,
+          "actual": null
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "critical",
+          "expected": 16,
+          "actual": null
+        },
+        {
+          "field": "flight_budget_cny",
+          "severity": "critical",
+          "expected": 5000,
+          "actual": null
+        },
+        {
+          "field": "required_destination_ids",
+          "severity": "critical",
+          "expected": [
+            "SEMPORNA"
+          ],
+          "actual": null
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "BALI"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-027",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "mixed_language",
+        "vague_month",
+        "required_destination",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-029",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "mixed_language",
+        "vague_month",
+        "required_destination",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-031",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "mixed_language",
+        "vague_month",
+        "required_destination",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-033",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "mixed_language",
+        "vague_month",
+        "required_destination",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "NKG"
+          ],
+          "actual": null
+        },
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-01",
+          "actual": null
+        },
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-31",
+          "actual": null
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "critical",
+          "expected": 12,
+          "actual": null
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "critical",
+          "expected": 16,
+          "actual": null
+        },
+        {
+          "field": "flight_budget_cny",
+          "severity": "critical",
+          "expected": 7000,
+          "actual": null
+        },
+        {
+          "field": "required_destination_ids",
+          "severity": "critical",
+          "expected": [
+            "PALAWAN"
+          ],
+          "actual": null
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "DANANG"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-034",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "mixed_language",
+        "vague_month",
+        "required_destination",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "PVG"
+          ],
+          "actual": null
+        },
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-01",
+          "actual": null
+        },
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-31",
+          "actual": null
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "critical",
+          "expected": 12,
+          "actual": null
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "critical",
+          "expected": 16,
+          "actual": null
+        },
+        {
+          "field": "flight_budget_cny",
+          "severity": "critical",
+          "expected": 7250,
+          "actual": null
+        },
+        {
+          "field": "required_destination_ids",
+          "severity": "critical",
+          "expected": [
+            "DANANG"
+          ],
+          "actual": null
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "PENANG"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-037",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-038",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-039",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-040",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-10",
+          "actual": "2027-10-20"
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-041",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-043",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-10",
+          "actual": "2027-10-15"
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-044",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "window_start_date",
+          "severity": "critical",
+          "expected": "2027-10-11",
+          "actual": "2027-10-05"
+        },
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-20",
+          "actual": "2027-10-25"
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "major",
+          "expected": 12,
+          "actual": 13
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "major",
+          "expected": 16,
+          "actual": 15
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "BANGKOK"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-045",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "min_trip_days",
+          "severity": "major",
+          "expected": 12,
+          "actual": 13
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "major",
+          "expected": 16,
+          "actual": 15
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-046",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "window_end_date",
+          "severity": "critical",
+          "expected": "2027-10-10",
+          "actual": "2027-10-15"
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "major",
+          "expected": 12,
+          "actual": 13
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "major",
+          "expected": 16,
+          "actual": 15
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-047",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "vague_date_window",
+        "approximate_duration",
+        "legitimate_ambiguity"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "PENANG"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-049",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "approximate_budget",
+        "vague_month",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-051",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "approximate_budget",
+        "vague_month",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-052",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "approximate_budget",
+        "vague_month",
+        "preferred_destination"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-062",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "required_destination",
+        "preferred_destination",
+        "budget"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "HGH"
+          ],
+          "actual": null
+        },
+        {
+          "field": "required_destination_ids",
+          "severity": "critical",
+          "expected": [
+            "BALI"
+          ],
+          "actual": null
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "TOKYO"
+          ],
+          "actual": null
+        },
+        {
+          "field": "min_trip_days",
+          "severity": "critical",
+          "expected": 7,
+          "actual": null
+        },
+        {
+          "field": "max_trip_days",
+          "severity": "critical",
+          "expected": 12,
+          "actual": null
+        },
+        {
+          "field": "flight_budget_cny",
+          "severity": "critical",
+          "expected": 5250,
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-068",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "required_destination",
+        "preferred_destination",
+        "budget"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-073",
+      "repeat": 3,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 90,
+            "diving": 100,
+            "food": 60,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 6,
+            "diving": 10,
+            "food": 4,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-074",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "HGH"
+          ],
+          "actual": null
+        },
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 100,
+            "culture": 80,
+            "nature": 0,
+            "city": 40,
+            "relaxation": 0
+          },
+          "actual": null
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "BALI"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-075",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 0,
+            "culture": 0,
+            "nature": 80,
+            "city": 0,
+            "relaxation": 100
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 0,
+            "culture": 0,
+            "nature": 5,
+            "city": 0,
+            "relaxation": 5
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-076",
+      "repeat": 3,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 90,
+            "diving": 100,
+            "food": 60,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 3,
+            "diving": 5,
+            "food": 2,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-077",
+      "repeat": 3,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 100,
+            "culture": 80,
+            "nature": 0,
+            "city": 40,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 5,
+            "culture": 3,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-079",
+      "repeat": 3,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 90,
+            "diving": 100,
+            "food": 60,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 3,
+            "diving": 5,
+            "food": 2,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-080",
+      "repeat": 3,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 100,
+            "culture": 80,
+            "nature": 0,
+            "city": 40,
+            "relaxation": 0
+          },
+          "actual": {
+            "city": 0,
+            "culture": 3,
+            "diving": 0,
+            "food": 5,
+            "island": 0,
+            "nature": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-081",
+      "repeat": 3,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 0,
+            "culture": 0,
+            "nature": 80,
+            "city": 0,
+            "relaxation": 100
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 0,
+            "culture": 0,
+            "nature": 5,
+            "city": 0,
+            "relaxation": 5
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-082",
+      "repeat": 3,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 90,
+            "diving": 100,
+            "food": 60,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 7,
+            "diving": 10,
+            "food": 5,
+            "culture": 0,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-083",
+      "repeat": 3,
+      "error_class": "correctable_error",
+      "categories": [
+        "natural_preference_weights",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preference_weights",
+          "severity": "major",
+          "expected": {
+            "island": 0,
+            "diving": 0,
+            "food": 100,
+            "culture": 80,
+            "nature": 0,
+            "city": 40,
+            "relaxation": 0
+          },
+          "actual": {
+            "island": 0,
+            "diving": 0,
+            "food": 5,
+            "culture": 3,
+            "nature": 0,
+            "city": 0,
+            "relaxation": 0
+          }
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-091",
+      "repeat": 3,
+      "error_class": "correctable_error",
+      "categories": [
+        "transfer_tolerance",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "SINGAPORE"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-093",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "transfer_tolerance",
+        "preferred_destination"
+      ],
+      "field_errors": [
+        {
+          "field": "origin_airport_ids",
+          "severity": "critical",
+          "expected": [
+            "NKG"
+          ],
+          "actual": null
+        },
+        {
+          "field": "max_connections_per_offer",
+          "severity": "critical",
+          "expected": 2,
+          "actual": null
+        },
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "PALAWAN"
+          ],
+          "actual": null
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-097",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "missing_information",
+        "missing_date"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-098",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_duration"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-099",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_budget"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "CEBU"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-100",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_origin"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-101",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_date"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "TOKYO"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-103",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_budget"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-104",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_origin"
+      ],
+      "field_errors": [
+        {
+          "field": "preferred_destination_ids",
+          "severity": "major",
+          "expected": [
+            "BANGKOK"
+          ],
+          "actual": []
+        }
+      ],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-105",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "missing_information",
+        "missing_date"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-106",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_duration"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-107",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "missing_information",
+        "missing_budget"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-109",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-110",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-111",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-112",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-113",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-115",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-116",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-117",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-118",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-119",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "conflicting_constraints"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-121",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-122",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-123",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-124",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-125",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-127",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-128",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-129",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-130",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-131",
+      "repeat": 3,
+      "error_class": "dangerous_semantic_error",
+      "categories": [
+        "catalog_external_destination",
+        "ambiguous_airport_city"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-133",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 2,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-135",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-136",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 2,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-139",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-141",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    },
+    {
+      "case_id": "M8-142",
+      "repeat": 3,
+      "error_class": "blocking_error",
+      "categories": [
+        "adversarial_or_malformed",
+        "prompt_injection"
+      ],
+      "field_errors": [],
+      "unresolved": {
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 1
+      },
+      "redaction_note": "Synthetic corpus case; original prose omitted from failure export."
+    }
+  ]
+}

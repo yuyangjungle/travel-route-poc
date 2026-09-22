@@ -1,0 +1,33 @@
+{
+  "benchmark_version": "m5-scalability-v1",
+  "common_window": {
+    "window_start_date": "2027-10-01",
+    "window_end_date": "2027-10-22"
+  },
+  "cases": [
+    {
+      "id": "small",
+      "hypothesis": "Exact search can interactively compare a focused regional set containing hubs, islands and one required destination.",
+      "active_destination_count": 8,
+      "required_destination_ids": ["SEMPORNA"],
+      "preferred_destination_ids": ["BALI", "CEBU"],
+      "max_optional_destinations": 2
+    },
+    {
+      "id": "medium",
+      "hypothesis": "Exact search remains usable when a traveler is open to a broader Asia network with several hub and island alternatives.",
+      "active_destination_count": 18,
+      "required_destination_ids": ["SEMPORNA"],
+      "preferred_destination_ids": ["BALI", "CEBU", "PALAWAN"],
+      "max_optional_destinations": 3
+    },
+    {
+      "id": "large",
+      "hypothesis": "A near-MVP catalog exposes the point where the current exhaustive DFS and complete-result retention stop being practical.",
+      "active_destination_count": 40,
+      "required_destination_ids": ["SEMPORNA"],
+      "preferred_destination_ids": ["BALI", "CEBU", "PALAWAN", "MALE"],
+      "max_optional_destinations": 4
+    }
+  ]
+}

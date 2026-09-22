@@ -1,0 +1,217 @@
+[
+  {
+    "id": "PVG",
+    "name": "Shanghai Pudong",
+    "timezone": "Asia/Shanghai"
+  },
+  {
+    "id": "HGH",
+    "name": "Hangzhou Xiaoshan",
+    "timezone": "Asia/Shanghai"
+  },
+  {
+    "id": "NKG",
+    "name": "Nanjing Lukou",
+    "timezone": "Asia/Shanghai"
+  },
+  {
+    "id": "TWU",
+    "name": "Tawau",
+    "timezone": "Asia/Kuching"
+  },
+  {
+    "id": "KUL",
+    "name": "Kuala Lumpur",
+    "timezone": "Asia/Kuala_Lumpur"
+  },
+  {
+    "id": "SGN",
+    "name": "Tan Son Nhat",
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+  {
+    "id": "DPS",
+    "name": "Denpasar",
+    "timezone": "Asia/Makassar"
+  },
+  {
+    "id": "HKT",
+    "name": "Phuket",
+    "timezone": "Asia/Bangkok"
+  },
+  {
+    "id": "SIN",
+    "name": "Singapore Changi",
+    "timezone": "Asia/Singapore"
+  },
+  {
+    "id": "BKK",
+    "name": "Suvarnabhumi",
+    "timezone": "Asia/Bangkok"
+  },
+  {
+    "id": "CEB",
+    "name": "Mactan-Cebu",
+    "timezone": "Asia/Manila"
+  },
+  {
+    "id": "NRT",
+    "name": "Narita",
+    "timezone": "Asia/Tokyo"
+  },
+  {
+    "id": "ICN",
+    "name": "Incheon",
+    "timezone": "Asia/Seoul"
+  },
+  {
+    "id": "TPE",
+    "name": "Taoyuan",
+    "timezone": "Asia/Taipei"
+  },
+  {
+    "id": "MNL",
+    "name": "Ninoy Aquino",
+    "timezone": "Asia/Manila"
+  },
+  {
+    "id": "HAN",
+    "name": "Noi Bai",
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+  {
+    "id": "DAD",
+    "name": "Da Nang",
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+  {
+    "id": "BKI",
+    "name": "Kota Kinabalu",
+    "timezone": "Asia/Kuching"
+  },
+  {
+    "id": "PPS",
+    "name": "Puerto Princesa",
+    "timezone": "Asia/Manila"
+  },
+  {
+    "id": "KIX",
+    "name": "Kansai",
+    "timezone": "Asia/Tokyo"
+  },
+  {
+    "id": "HKG",
+    "name": "Hong Kong",
+    "timezone": "Asia/Hong_Kong"
+  },
+  {
+    "id": "CNX",
+    "name": "Chiang Mai",
+    "timezone": "Asia/Bangkok"
+  },
+  {
+    "id": "PEN",
+    "name": "Penang",
+    "timezone": "Asia/Kuala_Lumpur"
+  },
+  {
+    "id": "LOP",
+    "name": "Lombok",
+    "timezone": "Asia/Makassar"
+  },
+  {
+    "id": "MPH",
+    "name": "Caticlan",
+    "timezone": "Asia/Manila"
+  },
+  {
+    "id": "PQC",
+    "name": "Phu Quoc",
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+  {
+    "id": "SAI",
+    "name": "Siem Reap-Angkor",
+    "timezone": "Asia/Phnom_Penh"
+  },
+  {
+    "id": "CGK",
+    "name": "Soekarno-Hatta",
+    "timezone": "Asia/Jakarta"
+  },
+  {
+    "id": "YIA",
+    "name": "Yogyakarta International",
+    "timezone": "Asia/Jakarta"
+  },
+  {
+    "id": "IAO",
+    "name": "Sayak",
+    "timezone": "Asia/Manila"
+  },
+  {
+    "id": "LGK",
+    "name": "Langkawi",
+    "timezone": "Asia/Kuala_Lumpur"
+  },
+  {
+    "id": "PNH",
+    "name": "Phnom Penh",
+    "timezone": "Asia/Phnom_Penh"
+  },
+  {
+    "id": "LPQ",
+    "name": "Luang Prabang",
+    "timezone": "Asia/Vientiane"
+  },
+  {
+    "id": "MLE",
+    "name": "Velana",
+    "timezone": "Indian/Maldives"
+  },
+  {
+    "id": "ROR",
+    "name": "Roman Tmetuchl",
+    "timezone": "Pacific/Palau"
+  },
+  {
+    "id": "MFM",
+    "name": "Macau",
+    "timezone": "Asia/Macau"
+  },
+  {
+    "id": "VTE",
+    "name": "Wattay",
+    "timezone": "Asia/Vientiane"
+  },
+  {
+    "id": "RGN",
+    "name": "Yangon",
+    "timezone": "Asia/Yangon"
+  },
+  {
+    "id": "GUM",
+    "name": "Antonio B. Won Pat",
+    "timezone": "Pacific/Guam"
+  },
+  {
+    "id": "CNS",
+    "name": "Cairns",
+    "timezone": "Australia/Brisbane"
+  },
+  {
+    "id": "SYD",
+    "name": "Sydney",
+    "timezone": "Australia/Sydney"
+  },
+  {
+    "id": "AKL",
+    "name": "Auckland",
+    "timezone": "Pacific/Auckland"
+  },
+  {
+    "id": "NAN",
+    "name": "Nadi",
+    "timezone": "Pacific/Fiji"
+  }
+]

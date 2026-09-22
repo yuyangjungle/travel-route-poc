@@ -1,0 +1,12 @@
+.git
+.venv
+.env*
+.streamlit/secrets.toml
+__pycache__
+**/__pycache__
+*.pyc
+reports
+evals/m8/runs
+evals/m8/results
+docs/screenshots
+tests

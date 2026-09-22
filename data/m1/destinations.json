@@ -1,0 +1,182 @@
+[
+  {
+    "id": "SEMPORNA",
+    "name": "SEMPORNA (synthetic benchmark profile)",
+    "timezone": "Asia/Kuching",
+    "tag_scores": {
+      "island": 100,
+      "diving": 100,
+      "food": 40
+    },
+    "season_scores_by_month": {
+      "1": 100,
+      "2": 100,
+      "3": 100,
+      "4": 100,
+      "5": 100,
+      "6": 100,
+      "7": 100,
+      "8": 100,
+      "9": 100,
+      "10": 100,
+      "11": 100,
+      "12": 100
+    },
+    "min_stay_nights": 3,
+    "recommended_stay_nights": 4,
+    "max_stay_nights": 18,
+    "min_usable_minutes": 1440,
+    "metadata_source": "hand-authored M1 synthetic rules; not researched destination advice",
+    "is_mock": true
+  },
+  {
+    "id": "KOTA",
+    "name": "KOTA (synthetic benchmark profile)",
+    "timezone": "Asia/Kuching",
+    "tag_scores": {
+      "island": 70,
+      "diving": 70,
+      "food": 80
+    },
+    "season_scores_by_month": {
+      "1": 100,
+      "2": 100,
+      "3": 100,
+      "4": 100,
+      "5": 100,
+      "6": 100,
+      "7": 100,
+      "8": 100,
+      "9": 100,
+      "10": 100,
+      "11": 100,
+      "12": 100
+    },
+    "min_stay_nights": 2,
+    "recommended_stay_nights": 3,
+    "max_stay_nights": 18,
+    "min_usable_minutes": 720,
+    "metadata_source": "hand-authored M1 synthetic rules; not researched destination advice",
+    "is_mock": true
+  },
+  {
+    "id": "KL",
+    "name": "KL (synthetic benchmark profile)",
+    "timezone": "Asia/Kuala_Lumpur",
+    "tag_scores": {
+      "island": 0,
+      "diving": 0,
+      "food": 100
+    },
+    "season_scores_by_month": {
+      "1": 100,
+      "2": 100,
+      "3": 100,
+      "4": 100,
+      "5": 100,
+      "6": 100,
+      "7": 100,
+      "8": 100,
+      "9": 100,
+      "10": 100,
+      "11": 100,
+      "12": 100
+    },
+    "min_stay_nights": 2,
+    "recommended_stay_nights": 3,
+    "max_stay_nights": 18,
+    "min_usable_minutes": 720,
+    "metadata_source": "hand-authored M1 synthetic rules; not researched destination advice",
+    "is_mock": true
+  },
+  {
+    "id": "SAIGON",
+    "name": "SAIGON (synthetic benchmark profile)",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "tag_scores": {
+      "island": 0,
+      "diving": 0,
+      "food": 100
+    },
+    "season_scores_by_month": {
+      "1": 100,
+      "2": 100,
+      "3": 100,
+      "4": 100,
+      "5": 100,
+      "6": 100,
+      "7": 100,
+      "8": 100,
+      "9": 100,
+      "10": 100,
+      "11": 100,
+      "12": 100
+    },
+    "min_stay_nights": 2,
+    "recommended_stay_nights": 3,
+    "max_stay_nights": 18,
+    "min_usable_minutes": 720,
+    "metadata_source": "hand-authored M1 synthetic rules; not researched destination advice",
+    "is_mock": true
+  },
+  {
+    "id": "BALI",
+    "name": "BALI (synthetic benchmark profile)",
+    "timezone": "Asia/Makassar",
+    "tag_scores": {
+      "island": 90,
+      "diving": 80,
+      "food": 70
+    },
+    "season_scores_by_month": {
+      "1": 100,
+      "2": 100,
+      "3": 100,
+      "4": 100,
+      "5": 100,
+      "6": 100,
+      "7": 100,
+      "8": 100,
+      "9": 100,
+      "10": 100,
+      "11": 100,
+      "12": 100
+    },
+    "min_stay_nights": 2,
+    "recommended_stay_nights": 4,
+    "max_stay_nights": 18,
+    "min_usable_minutes": 720,
+    "metadata_source": "hand-authored M1 synthetic rules; not researched destination advice",
+    "is_mock": true
+  },
+  {
+    "id": "PHUKET",
+    "name": "PHUKET (synthetic benchmark profile)",
+    "timezone": "Asia/Bangkok",
+    "tag_scores": {
+      "island": 80,
+      "diving": 50,
+      "food": 80
+    },
+    "season_scores_by_month": {
+      "1": 100,
+      "2": 100,
+      "3": 100,
+      "4": 100,
+      "5": 100,
+      "6": 100,
+      "7": 100,
+      "8": 100,
+      "9": 100,
+      "10": 100,
+      "11": 100,
+      "12": 100
+    },
+    "min_stay_nights": 2,
+    "recommended_stay_nights": 3,
+    "max_stay_nights": 18,
+    "min_usable_minutes": 720,
+    "metadata_source": "hand-authored M1 synthetic rules; not researched destination advice",
+    "is_mock": true
+  }
+]

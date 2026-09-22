@@ -1,0 +1,17 @@
+{
+  "boundary_version": "m8-frozen-boundary-v1",
+  "corpus_version": "m8-golden-v1",
+  "prompt_contract_version": "m7-extraction-v1",
+  "structured_output_schema_version": "m7-extraction-v1",
+  "evaluation_code_version": "m8-evaluator-v1",
+  "hashes": {
+    "corpus_sha256": "3baccdb0c19481284abf8151e2144e6e63623872574152a56cbf9093db5a8bd7",
+    "prompt_sha256": "8819aa3b2d16467e3ffc34d1b7e88301edb3fa7249cade17e4bba9ae5a7e0697",
+    "schema_sha256": "42060949fcbd4b688a21eb8b7a174101b96afc24635d57bba1e35e31b0968ebc",
+    "natural_language_boundary_sha256": "1e48d0a6252f797f8ffc3dac16c5d8da01f0ad12801efb1be0af2e554d5b358c",
+    "evaluation_code_sha256": "d739057477c13ed22a1c3133bc49d895aa3246f38f81da3495687397f505f189",
+    "optimizer_bundle_sha256": "7f3b272b9e8894e2abcd63f1423c3d4b7eb35f7d5c821bf6c04da102ae4f5889",
+    "synthetic_data_bundle_sha256": "4c5a69927ca7c4bff0aa7f6e4520b74285c1c4a9ba3b6bea26f53567e214ec40"
+  },
+  "policy": "Any mismatch blocks M8-002 before API calls. This snapshot must never be updated in place."
+}

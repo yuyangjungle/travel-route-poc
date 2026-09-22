@@ -1,0 +1,10 @@
+# Pin timezone rules for reproducible UTC/local conversions on Windows and Linux.
+tzdata==2024.2
+streamlit==1.44.1
+openai==3.14.1
+# OpenAI 3.x imports its aiohttp transport; pin a version with SocketTimeoutError support.
+aiohttp==3.14.3
+fastapi==0.141.1
+uvicorn==0.53.0
+# HTTP boundary tests use FastAPI TestClient; also supports OpenAI SDK sync transport.
+httpx==0.28.1

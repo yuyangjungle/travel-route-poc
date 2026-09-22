@@ -1,0 +1,101 @@
+{
+  "id": "B09",
+  "title": "Connection tolerance",
+  "hypothesis": "A direct-only request must exclude a cheaper connecting offer.",
+  "requirement_ids": [
+    "FR-03",
+    "FR-04"
+  ],
+  "assumption_ids": [
+    "A-01",
+    "A-07"
+  ],
+  "offer_ids": [
+    "pvg_twu",
+    "twu_pvg",
+    "long_return"
+  ],
+  "request": {
+    "request_id": "B09",
+    "origin_airport_ids": [
+      "PVG"
+    ],
+    "return_airport_ids": [
+      "PVG",
+      "HGH"
+    ],
+    "window_start_date": "2026-10-01",
+    "window_end_date": "2026-10-31",
+    "reference_timezone": "Asia/Shanghai",
+    "min_trip_days": 12,
+    "max_trip_days": 18,
+    "flight_budget_minor": 500000,
+    "currency": "CNY",
+    "passenger_count": 1,
+    "fare_profile_id": "adult-cny-tax-cabin7kg-no-checked-v1",
+    "required_destination_ids": [
+      "SEMPORNA"
+    ],
+    "preferred_destination_ids": [],
+    "preference_weights": {
+      "island": 100,
+      "diving": 0,
+      "food": 0
+    },
+    "max_optional_destinations": 4,
+    "max_connections_per_offer": 0,
+    "allow_self_transfer": false
+  },
+  "expected_request_status": "ok",
+  "witnesses": [
+    {
+      "id": "baseline",
+      "offer_ids": [
+        "pvg_twu",
+        "twu_pvg"
+      ],
+      "access_ids": [
+        "SEMPORNA_TWU"
+      ],
+      "expected": {
+        "valid": true,
+        "errors": [],
+        "metrics": {
+          "flight_total_minor": 360000,
+          "transit_minutes": 840,
+          "flight_day_count": 2,
+          "trip_days": 12,
+          "ground_total_minor": 10000,
+          "burden_points": "18.000000",
+          "experience_points": "100.000000",
+          "night_flight_minutes": 0,
+          "connection_count": 0,
+          "visits": [
+            {
+              "stay_nights": 11,
+              "usable_minutes": 7560
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "connecting",
+      "offer_ids": [
+        "pvg_twu",
+        "long_return"
+      ],
+      "access_ids": [
+        "SEMPORNA_TWU"
+      ],
+      "expected": {
+        "valid": false,
+        "errors": [
+          "connection_limit"
+        ]
+      }
+    }
+  ],
+  "comparisons": [],
+  "expected_search_status": "ok"
+}

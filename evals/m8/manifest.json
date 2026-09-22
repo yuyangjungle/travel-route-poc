@@ -1,0 +1,8 @@
+{
+  "corpus_version": "m8-golden-v1",
+  "case_count": 144,
+  "evaluation_count": 120,
+  "holdout_count": 24,
+  "corpus_sha256": "3baccdb0c19481284abf8151e2144e6e63623872574152a56cbf9093db5a8bd7",
+  "generation_policy": "Regeneration requires a new corpus version and manifest review."
+}
