@@ -1,0 +1,37 @@
+{
+  "milestone": "M9-001",
+  "verified_on": "2026-09-22",
+  "status": "complete",
+  "test_commit": "3c00aed",
+  "demo_url": "https://travel-route-poc.vercel.app",
+  "repository_url": "https://github.com/yuyangjungle/travel-route-poc",
+  "ci_url": "https://github.com/yuyangjungle/travel-route-poc/actions/runs/35725589433",
+  "automated_tests": {
+    "local": {"passed": 158, "failed": 0, "seconds": 37.356},
+    "clean_environment": {"passed": 158, "failed": 0, "seconds": 30.074},
+    "github_ubuntu": {"passed": 158, "failed": 0, "seconds": 23.833},
+    "m2_oracle": {"passed_scenarios": 20, "complete_sets_match": true},
+    "m5_regeneration": {"byte_identical_files": 6},
+    "m8_frozen_boundary": "unchanged",
+    "browser_regressions": {"passed": 3, "model_calls": 0}
+  },
+  "public_demo": {
+    "anonymous_access": true,
+    "server_side_deepseek": true,
+    "natural_language_correction_to_results": "passed",
+    "fixed_diving_scenario": {"feasible": 16, "pareto": 8, "displayed": 5},
+    "no_solution_preserves_constraints": true,
+    "mobile_viewport_px": 390,
+    "mobile_document_width_px": 390
+  },
+  "reliability": {
+    "m8_v1_readiness": "C",
+    "m9_v2_independent_evaluation": "not_performed",
+    "smoke_observations": ["some_drafts_rejected", "ambiguous_budget_interpreted_as_airfare"],
+    "manual_confirmation_required": true,
+    "real_user_validation": "not_performed"
+  },
+  "data_status": "simulated",
+  "deployment_method": "vercel_cli",
+  "automatic_git_deployment": false
+}

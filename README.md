@@ -1,6 +1,6 @@
 # 随心航线 · AI 多目的地旅行决策原型
 
-状态：M9-001 产品开发与交付验收进行中；Web 与 Streamlit 共用确定性优化器。[打开公开演示](https://travel-route-poc.vercel.app) · [GitHub仓库](https://github.com/yuyangjungle/travel-route-poc)。  
+状态：M9-001 已完成交付；Web 与 Streamlit 共用确定性优化器。[打开公开演示](https://travel-route-poc.vercel.app) · [GitHub仓库](https://github.com/yuyangjungle/travel-route-poc)。  
 最后更新：2026-09-22
 
 当前定位：**AI-assisted multi-objective travel decision prototype**。可选 LLM 层把自然语言转成经过验证的结构化条件；确定性搜索仍负责目的地、顺序、日期、停留和返程机场，并返回可解释的多方案对比。LLM 不生成路线或航班数据。
@@ -26,7 +26,7 @@ M8 冻结 v1 的真实模型评估结论仍是 C。M9 使用独立版本 `m9-int
 - M7-001：自然语言结构化提取、发现/手动双模式、确认式搜索流程和 AI 部署配置已完成；真实用户验证仍未执行。
 - M8-001：冻结 144 条合成自然语言语料，建立分项质量、重复一致性、下游影响、时延与成本评估。
 - M8-002：以 DeepSeek `deepseek-flash` 对 120 条 evaluation case 各运行 3 次；360/360 调用成功，24 条 holdout 未消费。schema-valid 52.778%、critical-field error 8.703%、manual correction 61.389%，结论为 C，不能直接进入 Pilot。
-- M9-001：产品开发已获授权，新增同源 Web 演示、可编辑意图确认、结果比较和版本化数据提供者，保留本地 Streamlit；GitHub 发布与 Vercel 公开演示属于本轮交付范围，部署状态以上方实测状态为准。
+- M9-001：已完成交付，新增同源 Web 演示、可编辑意图确认、结果比较和版本化数据提供者，保留本地 Streamlit；GitHub 发布与 Vercel 公开演示属于本轮交付范围，部署状态以上方实测状态为准。
 - 当前 large 精确基准三次中位数约 7.0 秒；保留 exact DFS 为正确性基线，后续优化方案尚未实施。
 - 当前仅接入可选的服务端模型 API；没有外部航班 API、真实报价、认证、数据库、抓取、支付或预订。公开演示不代表生产可用性或用户价值已得到验证。
 
